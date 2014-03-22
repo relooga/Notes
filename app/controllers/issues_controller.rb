@@ -72,3 +72,4 @@ class IssuesController < ApplicationController
       params.require(:issue).permit(:description, :product, :notes, :picture)
     end
 end
+#another useless comment
