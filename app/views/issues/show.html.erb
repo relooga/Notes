@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @issue.description %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @issue.product %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @issue.notes %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@issue.picture_url, :width => 600) if @issue.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>
